@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../image/favicon.png';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -10,7 +10,7 @@ export function Layout({ children }: LayoutProps) {
       <div className="w-full max-w-2xl">
         <div className="mb-8 text-center animate-fade-in">
           <div className="inline-flex items-center justify-center">
-            <img src='/src/image/favicon.png' className='w-[90px]'/>
+          <img src={logo} className="w-[90px]" alt="AuraDo" />
           </div>
           <h1 className="text-4xl font-bold text-slate-900 tracking-tight mb-2">
             AuraDo
